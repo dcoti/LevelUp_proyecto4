@@ -1,0 +1,49 @@
+body {
+    background-color: red;
+    text-align: center;
+}
+
+.inicio{
+    background-color: rgb(255, 73, 73);
+}
+
+
+.pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.pokemon-block,
+.pokemon-block-back {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}
+
+
+
+.name {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.pokemon-block,
+.pokemon-block-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.pokemon-block-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0%;
+}
